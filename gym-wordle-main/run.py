@@ -21,9 +21,6 @@ def simulate_game(model):
     num_iter = 0
     while not done:
         action, _states = model.predict(obs, deterministic=True)
-
-        action = env.generate_valid_action()
-
         obs, reward, done, truncated, info = env.step(action)
         rewards.append(reward)
         num_iter += 1

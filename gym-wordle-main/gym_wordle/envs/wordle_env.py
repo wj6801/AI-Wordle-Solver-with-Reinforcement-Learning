@@ -8,8 +8,6 @@ import colorama
 from colorama import Fore
 from colorama import Style
 
-from gym_wordle.exceptions import InvalidWordException
-
 colorama.init(autoreset=True)
 
 # global game variables
@@ -26,7 +24,7 @@ def encodeToStr(encoding):
 def strToEncode(lines):
     encoding = []
     for line in lines:
-        assert len(line.strip()) == 5  # Must contain 5-letter words for now
+        assert len(line.strip()) == 5
         encoding.append([ord(char) - 97 for char in line.strip()])
     return encoding
 
@@ -73,18 +71,19 @@ class WordleEnv(gym.Env):
 
         if all(self.board[board_row_idx, :] == 2):
             reward = 1.0
-            terminated = True
+            done = True
         else:
             if self.guesses_left > 0:
                 reward = 0.0
-                terminated = False
+                done = False
             else:
                 reward = -1.0
-                terminated = True
+                done = True
 
-        truncated = False  # No time limit in this environment
+        truncated = False
         self.update_constraints(action)
-        return self._get_obs(), reward, terminated, truncated, {}
+        return self._get_obs(), reward, done, truncated, {}
+    
 
     def generate_valid_action(self):
         for word in self.valid_words:
