@@ -1,6 +1,3 @@
-# COGS188 Project template
-Fork this repo.
+# AI Wordle Solver with Reinforcement Learning
 
-Once you do it is is your repo. You are free to manage the repo as you see fit, edit this README, add data files, add scripts, etc. 
-
-Also, you are free and encouraged to share this project after the course and to add it to your portfolio. Just be sure to fork it to your GitHub at the end of the quarter!
+The goal is to implement and evaluate reinforcement learning algorithms on a gymnasium environment for playing the Wordle game with reinforcement learning agents. The algorithms being tested are Advantage Actor-Critic (A2C) and Proximal Policy Optimization (PPO). The evaluation involves training these models on the Wordle gymnasium environment and comparing their performance based on mean reward over a series of training steps. The results highlight the effectiveness and efficiency of each algorithm, providing valuable insights into their applicability for solving the Wordle game within the typical 6 guesses and having an average success rate of 3 guesses.
