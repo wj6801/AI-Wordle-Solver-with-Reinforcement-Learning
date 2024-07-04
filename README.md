@@ -86,8 +86,3 @@ A2C and PPO produced nearly identical results in our AI Wordle experiments, with
 <a name="postnote"></a>2.[^](#post): Wordle players are cheating every day, mathematician says. *The Washington Post* https://nationalpost.com/news/wordle-cheating-claims#:~:text=Put%20another%20way%3A%20Of%20the,that%20might%20rise%20to%201%2C320.<br>
 <a name="pponote"></a>3.[^](#ppo): How PPO Algorithm works. https://medium.com/@oleglatypov/a-comprehensive-guide-to-proximal-policy-optimization-ppo-in-ai-82edab5db200#:~:text=PPO%2C%20or%20Proximal%20Policy%20Optimization,and%20generate%20human%2Dlike%20text.<br>
 <a name="pponote"></a>4.[^](#ppo): Average Wordle Scores. https://wordsrated.com/average-wordle-scores/#:~:text=The%20odds%20of%20solving%20a,tries%20is%2033.10%25%20on%20average.
-
-
-```python
-
-```
