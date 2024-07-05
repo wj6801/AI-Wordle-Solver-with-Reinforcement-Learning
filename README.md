@@ -33,9 +33,9 @@ In order to implement A2C and PPO algorithms to solve the Wordle game, we modifi
 ## Summary
 The evaulation metrics that we utilized were fitting for our project, and they has been used on other wordle AI related projects before. We ended up using **Success Ratio** along with **Guesses Per Success** over 100000 games. We think that these are valid metrics to use since when we think about an AI playing a wordle, the first question you ask is "did it get the word?" The obvious next question is "in how many guesses did take?". We believe that we represent these questions perfectly with our metrics and will show how they are great quanitifiers for our agents. The **Success Ratio** is determined by the wins vs losses that an AI attains along 100000 games, and the guesses per success are the amount of guesses that each successful run took. We additionally used some common metrics to analyze the models: **mean**, **standard deviation**, and **average number of guesses** to measure the effectiveness, consistency, and efficiency of each model respectively.
 ## Mathematical Notation
-Success Ratio $ = \frac{\sum_{i=1}^{100000} w_i}{100000}$ where $w_i$ is one hot encoded, $w_i=0$ is a loss and $w_0=1$ is a win
+Success Ratio = $\frac{\sum_{i=1}^{100000} w_i}{100000}$ where $w_i$ is one hot encoded, $w_i=0$ is a loss and $w_0=1$ is a win
 
-Guesses per Success $ = \frac{\sum_{i=1}^{G}g_i}{G}$, where G is the amount of games won and $g_i$ is the amount of guesses.
+Guesses per Success = $\frac{\sum_{i=1}^{G}g_i}{G}$, where G is the amount of games won and $g_i$ is the amount of guesses.
 
 # Results
 
